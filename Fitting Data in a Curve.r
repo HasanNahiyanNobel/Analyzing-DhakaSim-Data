@@ -45,3 +45,8 @@ curve(
 
 
 plot(density(dist_parked_cng))
+# Distribution of parked CNGs
+curve(
+  0.9*dnorm(x,mean=2.2,sd=0.7)
+  +0.035*dnorm(x,mean=3.85,sd=0.2),
+  col="red", lwd=2, add=TRUE)
