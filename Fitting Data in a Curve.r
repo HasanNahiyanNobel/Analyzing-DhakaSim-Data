@@ -36,11 +36,11 @@ curve(
 plot(density(dist_parked_rck))
 # Distribution of parked rickshaws
 curve(
-  +0.600*dnorm(x,mean=1.55,sd=0.520)
-  +0.232*dnorm(x,mean=2.75,sd=0.415)
-  +0.090*dnorm(x,mean=3.68,sd=0.300)
+  +0.582*dnorm(x,mean=1.57,sd=0.500)
+  +0.258*dnorm(x,mean=2.76,sd=0.440)
+  +0.085*dnorm(x,mean=3.67,sd=0.320)
   +0.046*dnorm(x,mean=4.65,sd=0.380)
-  +0.009*dnorm(x,mean=5.80,sd=0.380),
+  +0.009*dnorm(x,mean=5.88,sd=0.380),
   col="red", lwd=2, add=TRUE)
 
 
