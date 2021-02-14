@@ -13,10 +13,10 @@ dist_parked_cng = rep(freq_tab_parked_cng$value, freq_tab_parked_cng$freq)
 plot(density(dist_stndng_ped))
 # Distribution of standing pedestrians
 curve(
-  +0.4720*dnorm(x,mean=0.825,sd=0.40)
-  +0.3300*dnorm(x,mean=1.925,sd=0.45)
-  +0.1400*dnorm(x,mean=2.970,sd=0.40)
-  +0.0485*dnorm(x,mean=3.730,sd=0.32)
+  +0.4635*dnorm(x,mean=0.825,sd=0.40)
+  +0.3250*dnorm(x,mean=1.925,sd=0.45)
+  +0.1350*dnorm(x,mean=2.900,sd=0.42)
+  +0.0640*dnorm(x,mean=3.710,sd=0.35)
   +0.0070*dnorm(x,mean=5.750,sd=0.40),
   col="red", lwd=2, add=TRUE)
 
