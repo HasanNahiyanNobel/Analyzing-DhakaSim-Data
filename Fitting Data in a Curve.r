@@ -24,12 +24,12 @@ curve(
 plot(density(dist_parked_car))
 # Distribution of parked cars
 curve(
-  +0.060*dnorm(x,mean=1.10,sd=0.3575)
-  +0.542*dnorm(x,mean=2.07,sd=0.3220)
-  +0.170*dnorm(x,mean=3.64,sd=0.3320)
-  +0.180*dnorm(x,mean=2.76,sd=0.2900)
-  +0.038*dnorm(x,mean=4.48,sd=0.2700)
-  +0.010*dnorm(x,mean=5.92,sd=0.3000),
+  +0.050*dnorm(x,mean=1.12,sd=0.390)
+  +0.515*dnorm(x,mean=2.07,sd=0.322)
+  +0.200*dnorm(x,mean=2.73,sd=0.310)
+  +0.172*dnorm(x,mean=3.64,sd=0.334)
+  +0.042*dnorm(x,mean=4.48,sd=0.300)
+  +0.010*dnorm(x,mean=5.92,sd=0.310),
   col="red", lwd=2, add=TRUE)
 
 
