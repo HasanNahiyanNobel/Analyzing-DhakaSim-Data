@@ -10,7 +10,9 @@ dist_parked_car = rep(freq_tab_parked_car$value, freq_tab_parked_car$freq)
 dist_parked_rck = rep(freq_tab_parked_rck$value, freq_tab_parked_rck$freq)
 dist_parked_cng = rep(freq_tab_parked_cng$value, freq_tab_parked_cng$freq)
 
-plot(density(dist_stndng_ped))
+plot(density(dist_stndng_ped),main="", lwd=2,
+     xlab="Distance from Footpath (m)",
+     ylab="Probability Density of Standing Pedestrian")
 # Distribution of standing pedestrians
 curve(
   +0.4635*dnorm(x,mean=0.825,sd=0.40)
@@ -21,7 +23,9 @@ curve(
   col="red", lwd=2, add=TRUE)
 
 
-plot(density(dist_parked_car))
+plot(density(dist_parked_car),main="", lwd=2,
+     xlab="Distance from Footpath (m)",
+     ylab="Probability Density of Parked Car")
 # Distribution of parked cars
 curve(
   +0.050*dnorm(x,mean=1.12,sd=0.390)
@@ -33,7 +37,9 @@ curve(
   col="red", lwd=2, add=TRUE)
 
 
-plot(density(dist_parked_rck))
+plot(density(dist_parked_rck),main="", lwd=2,
+     xlab="Distance from Footpath (m)",
+     ylab="Probability Density of Parked Rickshaw")
 # Distribution of parked rickshaws
 curve(
   +0.582*dnorm(x,mean=1.57,sd=0.500)
@@ -44,7 +50,9 @@ curve(
   col="red", lwd=2, add=TRUE)
 
 
-plot(density(dist_parked_cng))
+plot(density(dist_parked_cng),main="", lwd=2,
+     xlab="Distance from Footpath (m)",
+     ylab="Probability Density of Parked CNG")
 # Distribution of parked CNGs
 curve(
   +0.119*dnorm(x,mean=1.13,sd=0.29)
